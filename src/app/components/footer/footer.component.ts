@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-footer',
+  template: `<footer class="footer" id="contact"><div class="container"><div class="footer-content"><div class="footer-column"><div class="footer-logo"><svg class="logo-icon" viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/><line x1="10" y1="16" x2="24" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="30" cy="26" r="8" fill="#6366F1"/></svg><span class="logo-text">InvoCraft</span></div><p class="footer-description">Professional invoice and quote management platform trusted by thousands of businesses worldwide.</p></div></div><div class="footer-bottom"><p class="footer-copyright">&copy; 2025 InvoCraft. All rights reserved.</p></div></div></footer>`,
+  styles: [`.footer { background-color: var(--gray-900); color: var(--gray-300); padding: 6rem 0 var(--spacing-lg); } .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: var(--spacing-xl); margin-bottom: 3rem; } .footer-logo { display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-md); } .logo-icon { width: 40px; height: 40px; color: var(--primary); } .logo-text { font-weight: 700; font-size: 1.25rem; color: var(--white); } .footer-description { color: var(--gray-400); line-height: 1.7; margin-bottom: var(--spacing-lg); } .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: var(--spacing-lg); border-top: 1px solid rgba(255, 255, 255, 0.1); flex-wrap: wrap; gap: var(--spacing-md); } .footer-copyright { font-size: 0.875rem; color: var(--gray-500); }`]
+})
+export class FooterComponent {}

@@ -1,0 +1,23 @@
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Features</span>
+      <h2 class="section-title">Everything You Need to<br><span class="gradient-text">Manage Your Business</span></h2>
+      <p class="section-subtitle">Powerful features designed to streamline your invoicing workflow and help you get paid faster.</p>
+    </div>
+    <div class="features-grid">
+      <div *ngFor="let feature of features" class="feature-card" appAnimateOnScroll>
+        <div class="feature-icon" [ngClass]="feature.gradientClass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path [attr.d]="feature.icon"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">{{ feature.title }}</h3>
+        <p class="feature-description">{{ feature.description }}</p>
+        <ul class="feature-list">
+          <li *ngFor="let item of feature.features">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
