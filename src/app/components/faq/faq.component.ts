@@ -397,31 +397,112 @@ import { Component } from '@angular/core';
     }
 
     @media (max-width: 768px) {
-      .faq-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+      .faq {
+        padding: 4rem 0;
+      }
+
+      .section-header {
+        margin-bottom: 3rem;
       }
 
       .section-title {
         font-size: 2rem;
       }
 
+      .section-subtitle {
+        font-size: 1rem;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
       .faq-category {
         padding: 1.5rem;
       }
 
+      .category-title {
+        font-size: 1.125rem;
+      }
+
+      .faq-question {
+        padding: 1rem 1.25rem;
+        font-size: 0.9375rem;
+      }
+
+      .faq-answer p {
+        padding: 0 1.25rem 1rem 1.25rem;
+        font-size: 0.875rem;
+      }
+
       .contact-cta {
-        padding: 2rem 1rem;
+        padding: 2rem 1.5rem;
+      }
+
+      .contact-cta h3 {
+        font-size: 1.5rem;
+      }
+
+      .contact-cta p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
       }
 
       .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        gap: 0.75rem;
       }
 
       .btn {
         width: 100%;
-        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faq {
+        padding: 3rem 0;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .section-badge {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+      }
+
+      .faq-category {
+        padding: 1.25rem;
+      }
+
+      .category-title {
+        font-size: 1rem;
+      }
+
+      .faq-question {
+        padding: 0.875rem 1rem;
+        font-size: 0.875rem;
+      }
+
+      .faq-answer p {
+        padding: 0 1rem 0.875rem 1rem;
+        font-size: 0.8125rem;
+        line-height: 1.5;
+      }
+
+      .contact-cta {
+        padding: 1.5rem 1rem;
+      }
+
+      .contact-cta h3 {
+        font-size: 1.25rem;
+      }
+
+      .contact-cta p {
+        font-size: 0.9375rem;
       }
     }
   `]

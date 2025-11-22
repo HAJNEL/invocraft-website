@@ -12,14 +12,14 @@
 
 :root {
   /* Colors */
-  --primary: #6366F1;
-  --primary-dark: #4F46E5;
-  --primary-light: #818CF8;
-  --secondary: #8B5CF6;
-  --accent: #EC4899;
-  --success: #10B981;
-  --warning: #F59E0B;
-  --error: #EF4444;
+  --primary: #1E3A8A;
+  --primary-dark: #1E40AF;
+  --primary-light: #3B82F6;
+  --secondary: #059669;
+  --accent: #0891B2;
+  --success: #059669;
+  --warning: #D97706;
+  --error: #DC2626;
   
   /* Neutrals */
   --gray-50: #F9FAFB;
@@ -72,6 +72,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -88,6 +96,14 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
+
+  @media (max-width: 768px) {
+    padding: 0 var(--spacing-md);
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 var(--spacing-sm);
+  }
 }
 
 .gradient-text {
@@ -128,4 +144,47 @@ body {
 @keyframes floatCard {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  body {
+    -webkit-tap-highlight-color: rgba(99, 102, 241, 0.2);
+    -webkit-touch-callout: none;
+  }
+
+  /* Improve tap targets for mobile */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Prevent text size adjustment on mobile */
+  input, textarea, select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Reduce spacing on very small screens */
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }

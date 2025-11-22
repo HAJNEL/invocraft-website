@@ -59,39 +59,6 @@ import { Component } from '@angular/core';
             </div>
           </div>
 
-          <!-- Trust Indicators -->
-          <div class="cta-trust">
-            <div class="trust-stats">
-              <div class="stat">
-                <div class="stat-number">10,000+</div>
-                <div class="stat-label">Active Users</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">500K+</div>
-                <div class="stat-label">Invoices Created</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Satisfaction Rate</div>
-              </div>
-            </div>
-
-            <div class="trust-badges">
-              <div class="badge">
-                <span class="badge-icon">🔒</span>
-                <span class="badge-text">Bank-Level Security</span>
-              </div>
-              <div class="badge">
-                <span class="badge-icon">✅</span>
-                <span class="badge-text">PCI DSS Compliant</span>
-              </div>
-              <div class="badge">
-                <span class="badge-icon">🌍</span>
-                <span class="badge-text">GDPR Compliant</span>
-              </div>
-            </div>
-          </div>
-
           <!-- Newsletter Signup -->
           <div class="cta-newsletter">
             <h3 class="newsletter-title">Stay Updated</h3>
@@ -439,57 +406,170 @@ import { Component } from '@angular/core';
 
     @media (max-width: 768px) {
       .cta-section {
-        padding: 4rem 0;
+        padding: 3rem 0;
+        margin-top: 3rem;
+      }
+
+      .cta-main {
+        margin-bottom: 3rem;
       }
 
       .cta-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .cta-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
       }
 
       .cta-benefits {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
+        margin-bottom: 2rem;
       }
 
       .benefit-item {
-        justify-content: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 0.9375rem;
+      }
+
+      .benefit-icon {
+        font-size: 1.25rem;
       }
 
       .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
       }
 
       .btn {
         width: 100%;
-        max-width: 300px;
         justify-content: center;
       }
 
+      .cta-trust {
+        margin-bottom: 3rem;
+      }
+
       .trust-stats {
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1rem;
+      }
+
+      .stat-number {
+        font-size: 1.75rem;
+      }
+
+      .stat-label {
+        font-size: 0.8125rem;
+      }
+
+      .trust-badges {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+      }
+
+      .badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        justify-content: center;
+      }
+
+      .cta-newsletter {
+        padding: 1.5rem;
+      }
+
+      .newsletter-title {
+        font-size: 1.25rem;
+      }
+
+      .newsletter-subtitle {
+        font-size: 0.9375rem;
+      }
+
+      .form-group {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .newsletter-input {
+        width: 100%;
+      }
+
+      .btn-secondary {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cta-section {
+        padding: 2.5rem 0;
+      }
+
+      .cta-title {
+        font-size: 1.75rem;
+      }
+
+      .cta-subtitle {
+        font-size: 1rem;
+      }
+
+      .benefit-item {
+        font-size: 0.875rem;
+      }
+
+      .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9375rem;
+      }
+
+      .trust-stats {
+        gap: 1rem 0.75rem;
       }
 
       .stat-number {
         font-size: 1.5rem;
       }
 
-      .trust-badges {
-        gap: 1rem;
-      }
-
-      .badge {
-        padding: 0.375rem 0.75rem;
+      .stat-label {
         font-size: 0.75rem;
       }
 
-      .form-group {
-        flex-direction: column;
+      .badge {
+        padding: 0.375rem 0.875rem;
+        font-size: 0.8125rem;
       }
 
-      .newsletter-input {
-        width: 100%;
+      .badge-icon {
+        font-size: 0.875rem;
+      }
+
+      .cta-newsletter {
+        padding: 1.25rem;
+      }
+
+      .newsletter-title {
+        font-size: 1.125rem;
+      }
+
+      .newsletter-subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .pattern-dots {
+        display: none;
+      }
+
+      .shape {
+        opacity: 0.3;
       }
     }
   `]

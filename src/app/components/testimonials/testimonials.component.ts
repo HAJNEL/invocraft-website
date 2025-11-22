@@ -162,26 +162,6 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </div>
-
-        <!-- Stats Section -->
-        <div class="stats-section">
-          <div class="stat-item">
-            <div class="stat-number">10,000+</div>
-            <div class="stat-label">Happy Customers</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">500,000+</div>
-            <div class="stat-label">Invoices Created</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">98%</div>
-            <div class="stat-label">Customer Satisfaction</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support Available</div>
-          </div>
-        </div>
       </div>
     </section>
   `,
@@ -377,13 +357,41 @@ import { Component } from '@angular/core';
     }
 
     @media (max-width: 768px) {
+      .testimonials {
+        padding: 4rem 0;
+      }
+
+      .section-header {
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-subtitle {
+        font-size: 1rem;
+      }
+
       .testimonials-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
       }
 
-      .section-title {
-        font-size: 2rem;
+      .testimonial-card {
+        padding: 1.5rem;
+      }
+
+      .testimonial-quote {
+        font-size: 0.9375rem;
+      }
+
+      .author-info h4 {
+        font-size: 0.9375rem;
+      }
+
+      .author-role {
+        font-size: 0.8125rem;
       }
 
       .stats-section {
@@ -394,6 +402,69 @@ import { Component } from '@angular/core';
 
       .stat-number {
         font-size: 2rem;
+      }
+
+      .stat-label {
+        font-size: 0.9375rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .testimonials {
+        padding: 3rem 0;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .section-badge {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+      }
+
+      .testimonial-card {
+        padding: 1.25rem;
+      }
+
+      .testimonial-quote {
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+
+      .testimonial-quote::before {
+        font-size: 2.5rem;
+        left: -0.5rem;
+      }
+
+      .author-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .avatar-initials {
+        font-size: 0.75rem;
+      }
+
+      .star {
+        font-size: 1rem;
+      }
+
+      .stats-section {
+        padding: 1.5rem 0.75rem;
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 0.5rem;
+      }
+
+      .stat-number {
+        font-size: 1.5rem;
+      }
+
+      .stat-label {
+        font-size: 0.8125rem;
       }
     }
   `]

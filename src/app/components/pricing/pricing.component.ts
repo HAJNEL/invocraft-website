@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-pricing',
   template: `
-    <div class="pricing-container">
+    <section class="pricing-container" id="pricing">
       <div class="container">
         <!-- Header -->
         <div class="header">
@@ -318,7 +318,7 @@ import { Component } from '@angular/core';
           <button class="cta-button outline">Contact Sales</button>
         </div>
       </div>
-    </div>
+    </section>
   `,
   styles: [`
     .pricing-container {
@@ -610,6 +610,10 @@ import { Component } from '@angular/core';
     }
 
     @media (max-width: 768px) {
+      .pricing-container {
+        padding: 1.5rem 0;
+      }
+
       .pricing-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -618,15 +622,125 @@ import { Component } from '@angular/core';
       .pricing-card.featured {
         transform: none;
         order: -1;
+        border-width: 2px;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-2px);
       }
 
       .title {
         font-size: 2rem;
       }
 
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .popular-badge {
+        top: 0.75rem;
+        right: 0.75rem;
+        padding: 0.375rem 0.875rem;
+        font-size: 0.7rem;
+      }
+
+      .card-content {
+        padding: 1.5rem;
+      }
+
+      .plan-icon {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .plan-name {
+        font-size: 1.25rem;
+      }
+
+      .plan-description {
+        font-size: 0.8125rem;
+      }
+
+      .price {
+        font-size: 2rem;
+      }
+
+      .period {
+        font-size: 0.875rem;
+      }
+
+      .feature-item {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0;
+      }
+
+      .check-icon {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      .cta-button {
+        padding: 0.875rem;
+        font-size: 0.9375rem;
+      }
+
       .additional-info,
       .custom-plan {
         padding: 2rem 1rem;
+      }
+
+      .info-title {
+        font-size: 1.25rem;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .info-icon {
+        font-size: 2.5rem;
+      }
+
+      .info-item h4 {
+        font-size: 1.125rem;
+      }
+
+      .custom-plan h3 {
+        font-size: 1.25rem;
+      }
+
+      .custom-plan p {
+        font-size: 0.8125rem;
+      }
+
+      .custom-plan .cta-button {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.75rem;
+      }
+
+      .card-content {
+        padding: 1.25rem;
+      }
+
+      .plan-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      .price {
+        font-size: 1.75rem;
+      }
+
+      .additional-info,
+      .custom-plan {
+        padding: 1.5rem 0.75rem;
       }
     }
   `]

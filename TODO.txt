@@ -1,0 +1,436 @@
+# InvoCraft - Features Implementation TODO List
+# Priority: 🔴 Critical | 🟡 Important | 🟢 Enhancement
+# Last Updated: November 22, 2025
+
+================================================================================
+PHASE 1: ADMIN PORTAL & MANAGEMENT SYSTEM (Critical - Build First)
+================================================================================
+
+🔴 1. Admin Portal Infrastructure
+   - Create admin-only routes and pages
+   - Admin authentication and authorization
+   - Admin dashboard overview
+   - Security and access control
+   Status: NOT STARTED
+
+🔴 2. User Management System
+   - View all registered users
+   - User search and filtering
+   - User profile viewing/editing
+   - User account status management (active/suspended/deleted)
+   - User activity logs
+   - Bulk user operations
+   Status: NOT STARTED
+
+🔴 3. Subscription Management Dashboard
+   - View all subscriptions
+   - Subscription status overview (active/trial/expired/cancelled)
+   - Subscription plan changes
+   - Manual subscription overrides
+   - Subscription analytics and metrics
+   - Renewal and billing history
+   - Refund processing
+   Status: NOT STARTED
+
+🔴 4. Permission & Role Management
+   - Define custom roles (Admin, Super Admin, Support, etc.)
+   - Role-based access control (RBAC) system
+   - Permission matrix management
+   - Assign/revoke permissions
+   - Role hierarchy management
+   - Audit trail for permission changes
+   Status: NOT STARTED
+
+🟡 5. Usage Analytics & Monitoring
+   - Real-time usage statistics per user
+   - System-wide metrics dashboard
+   - Invoice/quote creation trends
+   - Payment processing statistics
+   - Storage usage monitoring
+   - API usage tracking
+   Status: NOT STARTED
+
+🟡 6. Financial Admin Tools
+   - Revenue dashboard
+   - Payment reconciliation tools
+   - Failed payment management
+   - Discount/coupon management
+   - Invoice management for subscriptions
+   - Tax reporting tools
+   Status: NOT STARTED
+
+🟡 7. Customer Support Tools
+   - Support ticket management
+   - User impersonation (view as user)
+   - Quick user lookup
+   - Communication history
+   - Issue tracking and resolution
+   - Canned responses library
+   Status: NOT STARTED
+
+🟡 8. System Configuration & Settings
+   - Global system settings
+   - Feature flag management
+   - Pricing plan configuration
+   - Email template management
+   - System maintenance mode
+   - API rate limit configuration
+   Status: NOT STARTED
+
+🟢 9. Reporting & Export Tools
+   - Generate admin reports (users, revenue, usage)
+   - Export data to CSV/Excel
+   - Scheduled report generation
+   - Custom report builder
+   - Compliance reports
+   Status: NOT STARTED
+
+🟢 10. Audit & Security Logs
+   - Admin action logging
+   - Security event monitoring
+   - Login attempt tracking
+   - Data access logs
+   - Change history for critical data
+   - Suspicious activity alerts
+   Status: NOT STARTED
+
+🟢 11. Content Management
+   - Manage system announcements
+   - Update help/FAQ content
+   - Manage email templates
+   - Static page content editing
+   - Marketing content management
+   Status: NOT STARTED
+
+🟢 12. Onboarding & User Migration Tools
+   - Bulk user import
+   - Data migration utilities
+   - User onboarding automation
+   - Trial to paid conversion management
+   - Account merging tools
+   Status: NOT STARTED
+
+================================================================================
+PHASE 2: SUBSCRIPTION & BILLING SYSTEM (Critical for Monetization)
+================================================================================
+
+🔴 13. Subscription Management System
+   - Implement subscription tier enforcement (Starter, Professional, Enterprise)
+   - Create subscription database schema in Firebase/Firestore
+   - Build subscription selection UI
+   - Add payment integration for subscriptions
+   Status: NOT STARTED
+
+🔴 14. Usage Limits & Enforcement
+   - Starter Plan: 50 invoices/month limit enforcement
+   - Starter Plan: 20 clients limit enforcement
+   - Add usage tracking system
+   - Display usage metrics in dashboard
+   Status: NOT STARTED
+
+🔴 15. Free Trial System
+   - Implement 14-day free trial functionality
+   - Add trial expiration tracking
+   - Create trial-to-paid conversion flow
+   - Send trial expiration reminders
+   Status: NOT STARTED
+
+🔴 16. Billing Integration
+   - Integrate payment gateway for subscriptions
+   - Implement recurring billing
+   - Add invoice/receipt generation for payments
+   - Build billing history page
+   Status: NOT STARTED
+
+================================================================================
+PHASE 3: PAYMENT & INTEGRATION FEATURES
+================================================================================
+
+🟡 17. Stitch Money Integration (Enhanced)
+   - Complete Stitch Money API integration
+   - Add payment initiation flow
+   - Implement payment webhook handling
+   - Add payment status synchronization
+   Status: PARTIALLY IMPLEMENTED
+
+🟡 18. Multiple Payment Methods (Enterprise)
+   - Add support for multiple payment gateways
+   - Credit card processing
+   - EFT/Bank transfer options
+   - Cryptocurrency payment support (optional)
+   Status: NOT STARTED
+
+🟡 19. South African Banking Integration
+   - Integrate with SA banking systems
+   - Add bank account verification
+   - Implement direct bank payment options
+   - Support for SA-specific payment methods
+   Status: BASIC IMPLEMENTATION
+
+================================================================================
+PHASE 4: AUTOMATION & NOTIFICATIONS
+================================================================================
+
+🟡 20. Automated Payment Reminders
+   - Build scheduled reminder system
+   - Email reminders for overdue invoices
+   - SMS reminders (optional)
+   - Configurable reminder schedules
+   Status: NOT STARTED
+
+🟡 21. Email Notification System
+   - Comprehensive email template system
+   - Invoice sent notifications
+   - Payment received notifications
+   - Quote approval notifications
+   - System announcements
+   Status: PARTIALLY IMPLEMENTED
+
+🟡 22. Real-time Notifications
+   - In-app notification system
+   - Push notifications (optional)
+   - Notification preferences management
+   - Real-time updates via websockets
+   Status: NOT STARTED
+
+================================================================================
+PHASE 5: DOCUMENT MANAGEMENT ENHANCEMENTS
+================================================================================
+
+🟡 23. Invoice Duplication Feature
+   - One-click invoice duplication
+   - Smart data copying
+   - Duplicate with modifications option
+   Status: NOT STARTED
+
+🟡 24. Quote Duplication Feature
+   - One-click quote duplication
+   - Convert quote to template
+   - Bulk quote operations
+   Status: NOT STARTED
+
+🟡 25. Document Attachments
+   - File upload system
+   - Attach files to invoices
+   - Attach files to quotes
+   - Cloud storage integration
+   - File size limits per plan
+   Status: NOT STARTED
+
+🟡 26. Multiple Invoice Templates
+   - Create template library (3-5 professional templates)
+   - Template preview system
+   - Custom template builder
+   - Template marketplace (future)
+   Status: BASIC IMPLEMENTATION
+
+================================================================================
+PHASE 6: TAX & COMPLIANCE
+================================================================================
+
+🟡 27. VAT Registration Support (Enterprise)
+   - VAT number validation
+   - VAT calculation options
+   - VAT-compliant invoice formatting
+   - VAT reporting
+   Status: NOT STARTED
+
+🟡 28. Tax & Currency Configuration
+   - Multiple currency support
+   - Currency conversion rates
+   - Tax rate configuration
+   - Regional tax compliance
+   Status: BASIC IMPLEMENTATION
+
+================================================================================
+PHASE 7: USER EXPERIENCE ENHANCEMENTS
+================================================================================
+
+🔵 29. Dark/Light Theme Support (Enterprise)
+   - Implement theme switching
+   - Save user preference
+   - Dark mode UI design
+   - Accessibility considerations
+   Status: NOT STARTED
+
+🔵 30. Advanced Invoice Editor
+   - Rich text editor for descriptions
+   - Drag-and-drop item ordering
+   - Inline editing capabilities
+   - Advanced formatting options
+   Status: BASIC IMPLEMENTATION
+
+🔵 31. Onboarding Flow Enhancement
+   - 2-minute setup wizard
+   - Profile setup guidance
+   - Feature introduction tour
+   - Quick start templates
+   Status: PARTIALLY IMPLEMENTED
+
+🔵 32. Enhanced Analytics Visualizations
+   - Visual timeline reports
+   - Chart and graph improvements
+   - Custom report builder
+   - Data export options (CSV, PDF)
+   Status: PARTIALLY IMPLEMENTED
+
+================================================================================
+PHASE 8: ENTERPRISE FEATURES
+================================================================================
+
+🔵 33. Item Completion Tracking
+   - Task/item status tracking
+   - Completion percentage
+   - Time tracking per item
+   - Progress reports
+   Status: NEEDS VERIFICATION
+
+🔵 34. Email & Print Support
+   - Direct email sending from app
+   - Print optimization
+   - Bulk printing options
+   - Email scheduling
+   Status: NEEDS VERIFICATION
+
+🔵 35. Priority Support System (Enterprise)
+   - Support ticket system
+   - Priority queue for enterprise users
+   - Dedicated support portal
+   - SLA management
+   Status: NOT STARTED
+
+🔵 36. Multi-user Access (Enterprise)
+   - Team member invitations
+   - Role-based permissions
+   - Activity logging per user
+   - Collaboration features
+   Status: NOT STARTED
+
+================================================================================
+PHASE 9: PORTAL ENHANCEMENTS
+================================================================================
+
+🔵 37. Enhanced Invoice Portal
+   - Public invoice viewing improvements
+   - Mobile-optimized portal
+   - Payment button integration
+   - Invoice download from portal
+   Status: IMPLEMENTED - NEEDS ENHANCEMENT
+
+🔵 38. Enhanced Client Portal
+   - Client dashboard improvements
+   - Payment history view
+   - Document archive access
+   - Communication center
+   Status: IMPLEMENTED - NEEDS ENHANCEMENT
+
+================================================================================
+IMPLEMENTATION PRIORITY SUMMARY
+================================================================================
+
+IMMEDIATE (Next 2 weeks):
+- Admin Portal Infrastructure (#1)
+- User Management System (#2)
+- Subscription Management Dashboard (#3)
+- Permission & Role Management (#4)
+- Subscription Management System (#13)
+- Usage Limits & Enforcement (#14)
+
+SHORT TERM (Next 1 month):
+- Subscription Management Dashboard
+- Permission & Role Management
+- Stitch Money Integration completion
+- Automated Payment Reminders
+- Email Notification System
+- Invoice/Quote Duplication
+
+MEDIUM TERM (Next 2-3 months):
+- Usage Analytics & Monitoring
+- Financial Admin Tools
+- Customer Support Tools
+- System Configuration & Settings
+- Multiple Payment Methods
+- Document Attachments
+- VAT Support
+- Tax & Currency Configuration
+- Dark/Light Theme
+
+LONG TERM (3+ months):
+- Reporting & Export Tools
+- Audit & Security Logs
+- Content Management
+- Onboarding & User Migration Tools
+- Priority Support System
+- Multi-user Access
+- Advanced Analytics
+- Custom Template Builder
+
+================================================================================
+ADMIN PORTAL TECHNICAL REQUIREMENTS
+================================================================================
+
+DATABASE SCHEMA ADDITIONS:
+□ Admin users table with role assignments
+□ Permissions table with granular access control
+□ Admin activity logs table
+□ System configuration table
+□ Audit trail tables
+
+API ENDPOINTS NEEDED:
+□ /admin/users/* - User management endpoints
+□ /admin/subscriptions/* - Subscription management endpoints
+□ /admin/permissions/* - Permission management endpoints
+□ /admin/analytics/* - Analytics and reporting endpoints
+□ /admin/settings/* - System configuration endpoints
+□ /admin/support/* - Support ticket endpoints
+
+UI COMPONENTS:
+□ Admin dashboard layout
+□ Data tables with sorting/filtering/pagination
+□ User detail view/edit forms
+□ Subscription management interface
+□ Permission assignment matrix
+□ Analytics charts and graphs
+□ Audit log viewer
+□ System settings forms
+
+SECURITY CONSIDERATIONS:
+□ Admin role verification middleware
+□ Two-factor authentication for admin accounts
+□ IP whitelisting for admin access (optional)
+□ Session timeout for admin users
+□ Admin action logging and audit trail
+□ Secure admin password requirements
+□ Rate limiting for admin endpoints
+
+================================================================================
+TESTING & QUALITY ASSURANCE
+================================================================================
+
+□ Unit tests for subscription system
+□ Unit tests for admin portal functionality
+□ Integration tests for payment gateways
+□ Integration tests for admin API endpoints
+□ E2E tests for critical user flows
+□ E2E tests for admin workflows
+□ Performance testing for large datasets
+□ Security audit for payment handling
+□ Security audit for admin portal access
+□ Penetration testing for admin endpoints
+□ Mobile responsiveness testing
+□ Cross-browser compatibility testing
+□ Role-based access control testing
+
+================================================================================
+DEPLOYMENT & INFRASTRUCTURE
+================================================================================
+
+□ Production environment setup
+□ CI/CD pipeline configuration
+□ Database backup strategy
+□ Monitoring and alerting setup
+□ CDN configuration for assets
+□ SSL certificate management
+□ Domain and DNS configuration
+
+================================================================================
